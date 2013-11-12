@@ -1,25 +1,25 @@
 students = [
-"Anath"
-"Kennedy"
-"Erica"
-"Chris"
-"Jean Baptiste"
-"Tom"
-"Tom"
-"Simon"
-"Anna"
-"Laura"
-"Jianne"
-"Asta"
-"Giorgi"
-"james"
-"James"
-"Niki"
-"Nisar"
-"Giacomo"
-"Michael"
-"Peter"
-"Bruce"
+{:name => "Anath" , :cohort =>november}
+{:name => "Kennedy" , :cohort =>november}
+{:name => "Erica" , :cohort =>november}
+{:name => "Chris" , :cohort =>november}
+{:name => "Jean Baptiste" , :cohort =>november}
+{:name => "Tom" , :cohort =>november}
+{:name => "Tom" , :cohort =>november}
+{:name => "Simon" , :cohort =>november}
+{:name => "Anna" , :cohort =>november}
+{:name => "Laura" , :cohort =>november}
+{:name => "Jianne" , :cohort =>november}
+{:name => "Asta" , :cohort =>november}
+{:name => "Giorgi" , :cohort =>november}
+{:name => "james" , :cohort =>november}
+{:name => "James" , :cohort =>november}
+{:name => "Niki" , :cohort =>november}
+{:name => "Nisar" , :cohort =>november}
+{:name => "Giacomo" , :cohort =>november}
+{:name => "Michael" , :cohort =>november}
+{:name => "Peter" , :cohort =>november}
+{:name => "Bruce" , :cohort =>november}
 ]
 
 def print_header
@@ -27,9 +27,9 @@ def print_header
  puts "---------------------"
 end
 
-def print(names)
-names.each do |name|
-	puts name
+def print(students)
+students.each do |student|
+	puts "#{student[:name]} (#{student[:cohort]} cohort)"
  end
 end
 
