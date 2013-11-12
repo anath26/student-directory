@@ -20,3 +20,9 @@ puts "Giacomo"
 puts "Michael"
 puts "Peter"
 puts "Bruce"
+
+print "Overall, we have "
+print 9
+puts " great students"
+
+print "line1/nline2/nline3"
