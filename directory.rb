@@ -1,28 +1,43 @@
-puts "The students of my cohort at Makers Academy"
-puts "Anath"
-puts "Kennedy"
-puts "Erica"
-puts "Chris"
-puts "Jean Baptiste"
-puts "Tom"
-puts "Tom"
-puts "Simon"
-puts "Anna"
-puts "Laura"
-puts "Jianne"
-puts "Asta"
-puts "Giorgi"
-puts "james"
-puts "James"
-puts "Niki"
-puts "Nisar"
-puts "Giacomo"
-puts "Michael"
-puts "Peter"
-puts "Bruce"
+students = [
+"Anath"
+"Kennedy"
+"Erica"
+"Chris"
+"Jean Baptiste"
+"Tom"
+"Tom"
+"Simon"
+"Anna"
+"Laura"
+"Jianne"
+"Asta"
+"Giorgi"
+"james"
+"James"
+"Niki"
+"Nisar"
+"Giacomo"
+"Michael"
+"Peter"
+"Bruce"
+]
 
-print "Overall, we have "
-print 9
-puts " great students"
+def print_header
+ puts "The students of my cohort at Makers Academy"
+ puts "---------------------"
+end
 
-print "line1/nline2/nline3"
+def print(names)
+names.each do |name|
+	puts name
+ end
+end
+
+def print_footer (names)
+ puts "Overall. we have #{names.lenght} great students"
+end
+
+print_header
+print(students)
+print_footer(students)
+
