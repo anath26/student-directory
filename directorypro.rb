@@ -113,27 +113,17 @@ end
 def interactive_menu
 	loop do 
 		print_menu
-		process(gets.chomp)
+		selection = gets.chomp
+		process(selection)
+
+
 	end
 end
-students = []
-continue = "yes"
-while continue == "yes" do 
-print_menu
-show_students
-selection = gets.chomp
-process(selection)
 
-input_students(students)
-print_header
-print(students)
-select_character(students)
-select_students_A(students)
-print_footer(students)
-puts "Shall we go on?"
-continue = gets.chomp
-end
-print_footer(students)
+interactive_menu
+
+students = []
+
 
 
 
