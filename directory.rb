@@ -39,6 +39,7 @@ def input_students
 
 	students
 
+
 end
 
 def print_header
@@ -60,4 +61,34 @@ students = input_students
 print_header
 print(students)
 print_footer(students)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
